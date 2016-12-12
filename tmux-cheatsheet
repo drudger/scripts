@@ -1,0 +1,16 @@
+New Session       | tmux
+New Named Session | tmux new -s name
+!! & Name Window  | tmux new -s session-name -n window-name
+Attach to Session | tmux attach -t session-name
+Detach            | Prefix-D
+Cmd Mode          | Prefix-:
+Create Window     | Prefix-c
+Select Window     | Prefix-0..9
+Displays Window   | Prefix-w
+Rename Window     | Prefix-,
+Close Window      | Prefix-&
+Split Horizontal  | Prefix-|
+Split Vertical    | Prefix--
+Cycle Panes       | Prefix-o
+Close Pane        | Prefix-x
+Cycle Layouts     | Prefix-Space
