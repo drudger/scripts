@@ -65,11 +65,10 @@ rm -f README.md install_vim_plugins.sh
 
 echo ""
 
-# Copy dotfiles into home directory and source
+# Copy dotfiles into home directory
 echo "Copying dotfiles to home directory.
 "
 cp ~/dotfiles/.* ~/ 2>/dev/null
-source ~/.bashrc
 
 echo ""
 
@@ -78,3 +77,4 @@ echo "Cleaning Up.
 "
 cd ..
 rm -rf dotfiles
+source .bashrc
