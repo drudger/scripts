@@ -68,7 +68,7 @@ echo ""
 # Copy dotfiles into home directory and source
 echo "Copying dotfiles to home directory.
 "
-cp ~/dotfiles/* ~/
+cp ~/dotfiles/.* ~/ 2>/dev/null
 source ~/.bashrc
 
 echo ""
