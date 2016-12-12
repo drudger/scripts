@@ -46,17 +46,35 @@ else
     sudo apt-get -y install $INSTALL_LIST
 fi
 
+echo ""
+
 # Clone dot files
+echo "Cloning dot files repo.
+"
 git clone https://github.com/drudger/dotfiles.git
 cd dotfiles
 
+
+echo ""
+
 # Install vim plugins and delete unneeded files
+echo "Customizing vim with plugins and colorscheme.
+"
 ./install_vim_plugins.sh
+rm -f README.md install_vim_plugins.sh
+
+echo ""
 
 # Copy dotfiles into home directory and source
-cp ~/dotfiles/.* ~/
+echo "Copying dotfiles to home directory.
+"
+cp ~/dotfiles/* ~/
 source ~/.bashrc
 
+echo ""
+
 # Cleanup
+echo "Cleaning Up.
+"
 cd ..
 rm -rf dotfiles
